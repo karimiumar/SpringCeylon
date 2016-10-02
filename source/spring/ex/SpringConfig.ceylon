@@ -74,8 +74,8 @@ shared class AppConfig(){
     shared bean default DataSource ds() {
         value datasource = MysqlDataSource();
         datasource.databaseName = "nooranidb";
-        datasource.user = "root";
-        datasource.setPassword("root");
+        datasource.user = "<user>";
+        datasource.setPassword("<password>");
         datasource.setURL("jdbc:mysql://localhost:3306/nooranidb");
         return datasource;
     }
